@@ -1,0 +1,21 @@
+.footer {
+    &-home {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        z-index: 49;
+        width: 100%;
+        max-width: 1280px;
+        text-align: center;
+        position: fixed;
+        bottom: 16px;
+    }
+}
