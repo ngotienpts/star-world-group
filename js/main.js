@@ -126,6 +126,21 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
+    // khởi tạo slide embla auto width
+    function initEmblaAutoWidth() {
+        const emblaNode = document.querySelector('.js__emblaAutoSlide');
+
+        if(!emblaNode) return
+
+        const options = { 
+            align: 'start', 
+            containScroll: 'trimSnaps',
+            dragFree: true
+        };
+            
+        const emblaApi = EmblaCarousel(emblaNode, options);
+    }
+
 
     // Xử lý sự kiện khi cuộn trang
     function handleWindowScroll() {
@@ -145,6 +160,7 @@ document.addEventListener("DOMContentLoaded", function () {
         handleMenuMobile();
         handleCollapse();
         // slide
+        initEmblaAutoWidth();
         // end slide
         // initFancybox();
         // handleChangeTab();

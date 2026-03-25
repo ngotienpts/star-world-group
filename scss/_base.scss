@@ -160,6 +160,9 @@ p {
 .w-30 {
     width: 30%;
 }
+.w-32 {
+    width: 32%;
+}
 
 .w-35 {
     width: 35%;
@@ -189,6 +192,9 @@ p {
 }
 .w-70 {
     width: 70%;
+}
+.w-170px {
+    width: 170px;
 }
 .w-320px {
     width: 320px;
@@ -1525,4 +1531,7 @@ p {
     flex-wrap: nowrap;
     white-space: nowrap;
     overflow: auto;
+}
+.border-b-w-04 {
+    border-bottom: 1px solid rgba($color: #fff, $alpha: 0.04);
 }

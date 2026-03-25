@@ -30,6 +30,22 @@
         width: 100%;
     }
 }
+.block-secondary {
+    display: flex;
+    &__right {
+        flex-shrink: 0;
+        max-width: 410px;
+        width: 100%;
+    }
+
+    &__left {
+        flex: 1;
+        padding-right: 24px;
+        max-width: calc(100% - 410px);
+        width: 100%;
+    }
+}
+
 
 .same-height {
     .swiper-wrapper {
@@ -85,6 +101,19 @@
 .heading-secondary {
     &__title {
         font-size: 44px;
+        display: block;
+        color: #171a1c;
+        font-weight: 700;
+        background: linear-gradient(180deg, #FFF 6.2%, rgba(255, 255, 255, 0.64) 57.32%, rgba(255, 255, 255, 0.24) 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+.heading-tertiary {
+    &__title {
+        font-size: 20px;
         display: block;
         color: #171a1c;
         font-weight: 700;
